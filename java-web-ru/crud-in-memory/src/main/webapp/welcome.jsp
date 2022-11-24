@@ -11,6 +11,8 @@
             crossorigin="anonymous">
     </head>
     <body>
-        <a href="/users">Все пользователи</a>
+        <div class="container">
+            <a href="/users">Все пользователи</a>
+        </div>
     </body>
 </html>

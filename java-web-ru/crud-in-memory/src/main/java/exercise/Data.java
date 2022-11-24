@@ -14,6 +14,8 @@ import java.util.Collections;
 public class Data {
     private static final int USERS_COUNT = 100;
 
+    private static int idCounter = USERS_COUNT;
+
     public static List<Map<String, String>> getUsers() {
         Random random = new Random(123);
         Faker faker = new Faker(new Locale("en"), random);
@@ -36,5 +38,10 @@ public class Data {
         }
 
         return users;
+    }
+
+    public static String getNextId() {
+        int id = ++idCounter;
+        return Integer.toString(id);
     }
 }
