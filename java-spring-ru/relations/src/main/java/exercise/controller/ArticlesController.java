@@ -38,14 +38,14 @@ public class ArticlesController {
     }
 
     @PatchMapping(path = "/{id}")
-    public Article updateArticle(@PathVariable long id, @RequestBody Article article) {
-        article.setId(id);
-        return this.articleRepository.save(article);
+    public Article updateArticle(@PathVariable long id, @RequestBody Article inputArticle) {
+        inputArticle.setId(id);
+        return this.articleRepository.save(inputArticle);
     }
 
     @GetMapping(path = "/{id}")
-    public Article getArticle(@PathVariable long id) {
-        return this.articleRepository.findById(id);
+    public Article getArticle(@PathVariable Long id) {
+        return this.articleRepository.findById(id).get();
     }
     // END
 }

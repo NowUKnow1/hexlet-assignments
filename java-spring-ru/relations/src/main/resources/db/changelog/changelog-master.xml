@@ -48,4 +48,16 @@
     <changeSet author="vadim (generated)" id="1678695348896-2">
         <addDefaultValue columnDataType="bigint" columnName="id" defaultValueComputed="nextval('category_id_seq'::regclass)" tableName="category"/>
     </changeSet>
+    <changeSet author="vadim (generated)" id="1678696018158-1">
+        <addDefaultValue columnDataType="bigint" columnName="id" defaultValueComputed="nextval('article_id_seq'::regclass)" tableName="article"/>
+    </changeSet>
+    <changeSet author="vadim (generated)" id="1678696018158-2">
+        <addDefaultValue columnDataType="bigint" columnName="id" defaultValueComputed="nextval('category_id_seq'::regclass)" tableName="category"/>
+    </changeSet>
+    <changeSet author="vadim (generated)" id="1678696164776-1">
+        <addDefaultValue columnDataType="bigint" columnName="id" defaultValueComputed="nextval('article_id_seq'::regclass)" tableName="article"/>
+    </changeSet>
+    <changeSet author="vadim (generated)" id="1678696164776-2">
+        <addDefaultValue columnDataType="bigint" columnName="id" defaultValueComputed="nextval('category_id_seq'::regclass)" tableName="category"/>
+    </changeSet>
 </databaseChangeLog>
