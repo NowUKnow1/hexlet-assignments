@@ -9,8 +9,8 @@ import javax.persistence.Id;
 
 // BEGIN
 @Entity
-@Setter
 @Getter
+@Setter
 // END
 public class Person {
 

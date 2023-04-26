@@ -35,7 +35,9 @@ public class PeopleController {
     public void createPerson(@RequestBody Person person) { this.personRepository.save(person); }
 
     @DeleteMapping(path = "/{id}")
+    // Привязываем параметр метода к значению плейсхолдера
     public void deletePerson(@PathVariable long id) {
+        // удаляем сущность из базы по её id
         this.personRepository.deleteById(id);
     }
 
@@ -43,6 +45,7 @@ public class PeopleController {
     public void updatePerson(
             @RequestBody Person person,
             @PathVariable long id) {
+
         person.setId(id);
         this.personRepository.save(person);
     }
